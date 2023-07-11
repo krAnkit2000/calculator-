@@ -1,0 +1,77 @@
+*{
+   
+   box-sizing: border-box;
+}
+
+.container{
+    border: 2px solid black;
+    width: 14rem;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto;
+    width: 15rem;
+    background-color: rgb(151, 186, 255);
+}
+
+.display{
+    width: 100%;
+    padding: 6px;
+}
+ 
+.display input{
+    background-color: rgb(251, 251, 244); 
+    color: rgb(7, 7, 7);
+    height: 30px;
+    border:1px solid rgb(216, 215, 215);
+    border-radius: 3px;
+    text-align: end;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3px 5px;
+    font-size: 20px;
+}
+
+.display input:focus{
+    border: 1px solid #333;
+    outline: none;
+    box-shadow: inset 0px 1px 5px rgba(90, 90, 90, 0.5);
+}
+button{
+    height: 40px;
+    background-color: rgb(233, 238, 243);
+    border: 1px solid rgba(10, 3, 3, 0.888);
+    border-radius: 2px;
+    cursor: pointer;
+}
+button:focus{
+    color: rgb(246, 248, 246);
+   background-color: rgb(1, 2, 1);
+}
+
+.action-button{
+   padding-top: 10px;
+    width: fit-content;
+    display: flex; 
+    gap: 1px;
+    color: rgb(244, 236, 236);
+    background-color:rgb(236, 99, 99);
+    border: 1px solid rgb(235, 225, 225);
+    border-radius: 3px;
+}
+.num, .input, .operator{
+    display: grid;
+    grid-template-columns: repeat(4, 40px);
+    gap: 10px 15px;
+    margin: 10px;
+    
+
+  }
+  .operators{
+   font-size: 20px;
+   padding: 5px;
+   
+  }
+  #equal{
+    background-color: rgb(227, 82, 82);
+   
+  }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+            <input type="text" placeholder="0"  class="inputValues" >
+        </div>
+        <div class="operator">
+            <button class="action-button" onclick="clr()">CLR</button>
+            <button class="action-button" onclick="del()">DEL</button>
+            <button class="operators" onclick="insert('%')">%</button>
+            <button class="operators"  onclick="insert('÷')">÷</button>
+        </div>
+
+        <div class="num">
+
+          <button class="input-button" onclick="insert('7')">7</button>  
+          <button class="input-button" onclick="insert('8')">8</button> 
+          <button class="input-button" onclick="insert('9')">9</button> 
+          <button class="operators" onclick="insert('*')">*</button>
+         
+        </div>
+
+        <div class="num">
+            <button class="input-button" onclick="insert('4')">4</button> 
+            <button class="input-button" onclick="insert('5')">5</button>  
+            <button class="input-button" onclick="insert('6')">6</button> 
+            <button class="operators" onclick="insert('-')" >-</button> 
+           
+        </div>
+
+        <div class="num">
+         <button class="input-button" onclick="insert('1')">1</button> 
+         <button class="input-button" onclick="insert('2')">2</button>  
+         <button class="input-button" onclick="insert('3')">3</button> 
+         <button class="operators" onclick="insert('+')">+</button>  
+         </div>
+
+       <div class="num">
+        <button class="input-button" onclick="insert('0')">0</button>
+        <button class="input-button" onclick="insert('00')">00</button>
+        <button class="input-button"onclick="insert('.')">.</button>
+        <button class="operators"  id="equal" onclick="cal()">=</button> 
+       </div>
+
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
